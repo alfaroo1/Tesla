@@ -29,15 +29,15 @@
             </div>
         </header>
         <main class="container max-w-full">
-            <!-- Container Video -->
-            <div class="relative w-full h-screen overflow-hidden">
+            <!-- Home -->
+            <section class="relative w-full h-screen overflow-hidden">
                 <!-- Video -->
                 <video class="absolute top-0 left-0 w-full h-full object-cover" src="./assets/videos/video_tesla.webm" autoplay loop muted></video>
                 <!-- Text -->
                 <div class="relative z-10 h-full flex flex-col justify-between p-12 text-center">
                     <!-- Container title and text -->
                     <div>
-                        <h2 class="text-white text-7xl font-semibold">Disfurte de Tesla</h2>
+                        <h2 class="text-white text-7xl font-semibold">Disfrute de Tesla</h2>
                         <p class="text-white mt-4 text-xl font-medium">Programe una prueba de conduccion hoy mismo</p>
                     </div>
                     <!-- Container button -->
@@ -45,7 +45,41 @@
                         <button class="bg-blue-400 text-white p-4 rounded-md text-xl font-medium w-80">Prueba de conduccion</button>
                     </div>
                 </div>
-            </div>
+            </section>
+            <!-- Section info -->
+            <section class="mt-24">
+                <h3 class="text-5xl font-semibold ml-16">Somos tesla</h3>
+                <!-- Card 1 -->
+                <div class="flex justify-center gap-6 mt-12 mb-8">
+                    <!-- Container image -->
+                    <div class="w-2/5 mx-w-full">
+                        <img src="./assets/images/interior__coche.jpg" class="object-cover rounded-md w-full h-[400px]" alt="Imagen del interior de un coche tesla" srcset="">
+                    </div>
+                    <!-- Container text -->
+                    <div class="w-2/5 mx-w-full flex flex-col justify-center gap-4">
+                        <h4 class="text-4xl">Disfruta la tecnologia Tesla</h4>
+                        <p class="text-[1.15rem]">Los interiores de los coches Tesla destacan por su diseño minimalista, con una pantalla táctil central de gran tamaño
+                        que controla casi todas las funciones del vehículo. Los materiales premium y la iluminación ambiental crean un ambiente
+                        moderno y acogedor</p>
+                        <a href="#">Leer mas...</a>
+                    </div>
+                </div>
+                <!-- Card 2 -->
+                <div class="flex flex-row-reverse justify-center gap-6">
+                    <!-- Container image -->
+                    <div class="w-2/5 mx-w-full">
+                        <img src="./assets/images/seguridad__coche.jpg" class="object-cover rounded-md w-full h-[400px]" alt="Imagen de la seguridad de la carroceria de un tesla" srcset="">
+                    </div>
+                    <!-- Container text -->
+                    <div class="w-2/5 mx-w-full flex flex-col justify-center gap-4">
+                        <h4 class="text-4xl">Somos la tercera marca con mejor seguridad</h4>
+                        <p class="text-[1.15rem]">Los coches Tesla son reconocidos por su avanzada seguridad, integrando estructuras reforzadas, múltiples airbags y un
+                        sistema de conducción autónoma diseñado para evitar colisiones. Además, sus constantes actualizaciones de software
+                        mejoran la seguridad activa</p>
+                        <a href="#">Leer mas...</a>
+                    </div>
+                </div>
+            </section>
         </main>
         <footer></footer>
     </div>
