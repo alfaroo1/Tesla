@@ -11,9 +11,9 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    <div class="border border-red-500">
+    <div class="border">
         <!-- Cbecera -->
-        <header class="container max-w-full flex justify-around items-center border border-blue-500 p-4">
+        <header class="container max-w-full flex justify-around items-center border p-4">
             <h1 class="text-3xl">Tesla</h1>
             <!-- Navbar -->
             <nav>
@@ -28,7 +28,25 @@
                 <a href="" class="text-2xl"><i class="fa-solid fa-circle-question"></i></a>
             </div>
         </header>
-        <main></main>
+        <main class="container max-w-full">
+            <!-- Container Video -->
+            <div class="relative w-full h-screen overflow-hidden">
+                <!-- Video -->
+                <video class="absolute top-0 left-0 w-full h-full object-cover" src="./assets/videos/video_tesla.webm" autoplay loop muted></video>
+                <!-- Text -->
+                <div class="relative z-10 h-full flex flex-col justify-between p-12 text-center">
+                    <!-- Container title and text -->
+                    <div>
+                        <h2 class="text-white text-7xl font-semibold">Disfurte de Tesla</h2>
+                        <p class="text-white mt-4 text-xl font-medium">Programe una prueba de conduccion hoy mismo</p>
+                    </div>
+                    <!-- Container button -->
+                    <div>   
+                        <button class="bg-blue-400 text-white p-4 rounded-md text-xl font-medium w-80">Prueba de conduccion</button>
+                    </div>
+                </div>
+            </div>
+        </main>
         <footer></footer>
     </div>
 </body>
