@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tesla</title>
+    <title>Tesla | Inicio</title>
     <link rel="stylesheet" href="./output.css">
     <link rel="shortcut icon" href="./assets/images/favion.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
@@ -13,21 +13,25 @@
 <body>
     <div class="border">
         <!-- Cbecera -->
-        <header class="container max-w-full flex justify-around items-center border p-4">
-            <h1 class="text-3xl">Tesla</h1>
-            <!-- Navbar -->
-            <nav>
-                <ul class="flex gap-12">
-                    <li><a href="./index.html" class="text-2xl">Inicio</a></li>
-                    <li><a href="" class="text-2xl">Vehiculos</a></li>
-                    <li><a href="" class="text-2xl">Carga</a></li>
-                </ul>
-            </nav>
-            <div>
-                <a href="" class="text-2xl"><i class="fa-solid fa-user"></i></a>
-                <a href="" class="text-2xl"><i class="fa-solid fa-circle-question"></i></a>
-            </div>
-        </header>
+            <header class="max-w-full sticky z-auto top-0 left-0 right-0 flex bg-gray-400 justify-around items-center border p-4">
+                <h1 class="text-3xl">Tesla</h1>
+                <!-- Navbar -->
+                <nav class="hidden lg:flex">
+                    <ul class="flex gap-12">
+                        <li><a href="./index.html" class="text-2xl">Inicio</a></li>
+                        <li><a href="./pages/vehiculos.html" class="text-2xl">Vehiculos</a></li>
+                        <li><a href="" class="text-2xl">Carga</a></li>
+                    </ul>
+                </nav>
+                <div class="hidden lg:flex">
+                    <a href="" class="text-2xl"><i class="fa-solid fa-user"></i></a>
+                    <a href="" class="text-2xl"><i class="fa-solid fa-circle-question"></i></a>
+                </div>
+                <!-- Menu hamburguesa -->
+                <div class="block text-3xl lg:hidden">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </header>
         <!-- Cuerpo -->
         <main class="container max-w-full">
             <!-- Home -->
@@ -92,15 +96,14 @@
                 md:col-start-1 md:row-start-1 md:row-end-2 md:col-end-2 
                 lg:col-start-1 lg:row-start-1 lg:row-end-3 lg:col-end-2 
                 xl:col-start-1 xl:row-start-1 xl:row-end-3 xl:col-end-2 ">
-                    <ul>
+                    <ul class="flex gap-4 justify-center lg:block xl:flex">
                         <li><a href="#">Modelos</a></li>
                         <li><a href="#">Distribuidores</a></li>
                         <li><a href="#">Conocenos</a></li>
-                        <li><a href="#">Sobre nosotros</a></li>
                         <li><a href="#">Corporativo</a></li>
                     </ul>
                 </div>
-                <div class="border border-yellow-300 
+                <div class="border border-yellow-300 text-center
                 md:col-start-1 md:row-start-2 md:row-end-3 md:col-end-3 
                 lg:col-start-2 lg:row-start-1 lg:row-end-3 lg:col-end-3 
                 xl:col-start-2 xl:row-start-1 xl:row-end-3 xl:col-end-3 ">
@@ -113,7 +116,7 @@
                 md:col-start-2 md:row-start-1 md:row-end-2 md:col-end-3 
                 lg:col-start-3 lg:row-start-1 lg:row-end-3 lg:col-end-4 
                 xl:col-start-3 xl:row-start-1 xl:row-end-3 xl:col-end-4">
-                    <ul>
+                    <ul class="flex gap-4 justify-center">
                         <li><i class="fa-brands fa-facebook"></i></li>
                         <li><i class="fa-brands fa-instagram"></i></li>
                         <li><i class="fa-brands fa-x-twitter"></i></li>
@@ -122,7 +125,14 @@
                     </ul>
                 </div>
             </section>
-            <div></div>
+            <div>
+                <ul class="hidden gap-4 justify-end lg:flex">
+                    <li><a href="#">Terminos y condiciones</a></li>
+                    <li><a href="#">Privacidad</a></li>
+                    <li><a href="#">Cookies</a></li>
+                    <li>© Tesla 2024</li>
+                </ul>
+            </div>
         </footer>
     </div>
 </body>
