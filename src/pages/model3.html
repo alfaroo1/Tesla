@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tesla | Model 3</title>
+    <link rel="stylesheet" href="../output.css">
+    <link rel="shortcut icon" href="../assets/images/favion.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+        integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="bg-black">
+        <!-- Cbecera -->
+        <header class="mx-w-full bg-[url('./assets/images/model3/fondo.webp')] bg-no-repeat bg-cover">
+            <!-- Navegador -->
+            <div class="max-w-full flex justify-around items-center p-4">
+                <h1 class="text-2xl">Tesla</h1>
+                <!-- Navbar -->
+                <nav class="hidden lg:flex">
+                    <ul class="flex gap-12">
+                        <li><a href="../index.html" class="text-xl">Inicio</a></li>
+                        <li><a href="vehiculos.html" class="text-xl">Vehiculos</a></li>
+                        <li><a href="" class="text-xl">Carga</a></li>
+                    </ul>
+                </nav>
+                <div class="hidden lg:flex gap-3">
+                    <a href="login.html" class="text-xl"><i class="fa-solid fa-user"></i></a>
+                    <a href="" class="text-xl"><i class="fa-solid fa-circle-question"></i></a>
+                </div>
+                <!-- Menu hamburguesa -->
+                <div class="block text-3xl lg:hidden">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </div>
+            <!-- Coche -->
+            <div class="mt-12 flex flex-col justify-between text-center h-[650px] p-12">
+                <div>
+                    <h2 class="text-5xl font-semibold">Model 3 Performance</h2>
+                </div>
+                <div class="flex gap-12 justify-center text-white">
+                    <div class="div">
+                        <p class="text-xl font-semibold">460 hp</p>
+                        <p class="">Potencia maxima</p>
+                    </div>
+                    <div class="div">
+                        <p class="text-xl font-semibold">3,1 s</p>
+                        <p class="">0-100 km/h</p>
+                    </div>
+                    <div class="div">
+                        <p class="text-xl font-semibold">262 km/h</p>
+                        <p class="">Velocidad maxima</p>
+                    </div>
+                    <div class="flex items-center">
+                        <button class="bg-blue-500 rounded-md p-2 w-[150px]">Encargar</button>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- Cuerpo -->
+        <main class="mx-w-full">
+            <!-- Section Video-->
+            <section class="w-full mt-12 flex flex-col items-center gap-10 text-center text-white">
+                <video src="../assets/videos/model3.webm" class="w-10/12 rounded-sm" autoplay loop></video>
+                <div class="w-1/2">
+                    <h2 class="mb-6 text-3xl font-medium">Rendimiento de otro nivel</h2>
+                    <p class="font-light tracking-wider">Experimente nuestra unidad de tracción Performance de última generación, la más potente hasta la fecha equipada en un
+                    Model 3, que cuenta con 460 caballos de potencia y con la que puede pasar de 0 a 100 km/h en tan solo 3,1 segundos1.</p>
+                </div>
+            </section>
+            <!-- Section Color Coche -->
+            <section class="w-full mt-12 flex justify-between p-4">
+                <div class="bg-slate-200 w-1/2 flex flex-col rounded-sm">
+                    <img src="../assets/images/model3/rojo.jpeg" alt="" class="border border-blue-400 h-5/6">
+                    <h2 class="ml-6 mb-4 text-2xl">Tesla Model 3 Performance</h2>
+                </div>
+                <div class=" w-2/5 text-white">
+                    <h4>Model 3 <span id="color"></span></h4>
+                    <p></p>
+                    <div class="flex">
+                        <img src="../assets/images/model3/color_rojo.avif" id="rojo" alt="" class="w-[30px]">
+                        <img src="../assets/images/model3/color_azul.avif" id="azul" alt="" class="w-[30px]">
+                        <img src="../assets/images/model3/color_blanco.avif" id="blanco" alt="" class="w-[30px]">
+                        <img src="../assets/images/model3/color_negro.avif" id="negro" alt="" class="w-[30px]">
+                    </div>
+                </div>
+            </section>
+        </main>
+        <!-- Footer -->
+        <footer class="mt-12">
+            <h2 class="text-3xl font-medium">Tesla</h2>
+            <hr class="bg-black h-1">
+            <!-- Section of footer -->
+            <section
+                class="border border-red-300 grid grid-rows-2 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 ">
+                <div class="border border-blue-300 
+                md:col-start-1 md:row-start-1 md:row-end-2 md:col-end-2 
+                lg:col-start-1 lg:row-start-1 lg:row-end-3 lg:col-end-2 
+                xl:col-start-1 xl:row-start-1 xl:row-end-3 xl:col-end-2 ">
+                    <ul class="flex gap-4 justify-center lg:block xl:flex">
+                        <li><a href="#">Modelos</a></li>
+                        <li><a href="#">Distribuidores</a></li>
+                        <li><a href="#">Conocenos</a></li>
+                        <li><a href="#">Corporativo</a></li>
+                    </ul>
+                </div>
+                <div class="border border-yellow-300 text-center
+                md:col-start-1 md:row-start-2 md:row-end-3 md:col-end-3 
+                lg:col-start-2 lg:row-start-1 lg:row-end-3 lg:col-end-3 
+                xl:col-start-2 xl:row-start-1 xl:row-end-3 xl:col-end-3 ">
+                    <label for="">Encuntra tu concesionario mas cercano</label>
+                    <div>
+                        <input type="text" placeholder="Ciudad/Codigo Postal">
+                    </div>
+                </div>
+                <div class="border border-green-300 
+                md:col-start-2 md:row-start-1 md:row-end-2 md:col-end-3 
+                lg:col-start-3 lg:row-start-1 lg:row-end-3 lg:col-end-4 
+                xl:col-start-3 xl:row-start-1 xl:row-end-3 xl:col-end-4">
+                    <ul class="flex gap-4 justify-center">
+                        <li><i class="fa-brands fa-facebook"></i></li>
+                        <li><i class="fa-brands fa-instagram"></i></li>
+                        <li><i class="fa-brands fa-x-twitter"></i></li>
+                        <li><i class="fa-brands fa-tiktok"></i></li>
+                        <li><i class="fa-brands fa-youtube"></i></li>
+                    </ul>
+                </div>
+            </section>
+            <div>
+                <ul class="hidden gap-4 justify-end lg:flex">
+                    <li><a href="#">Terminos y condiciones</a></li>
+                    <li><a href="#">Privacidad</a></li>
+                    <li><a href="#">Cookies</a></li>
+                    <li>© Tesla 2024</li>
+                </ul>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
