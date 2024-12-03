@@ -73,29 +73,29 @@
             </section>
             <!-- Section Color Coche -->
             <section class="w-full mt-12 flex justify-between p-4">
-                <div class="bg-slate-200 w-1/2 flex flex-col rounded-sm">
-                    <img src="../assets/images/model3/rojo.jpeg" alt="" class="border border-blue-400 h-5/6">
-                    <h2 class="ml-6 mb-4 text-2xl">Tesla Model 3 Performance</h2>
+                <div class="bg-gradient-to-r from-zinc-900 w-1/2 flex flex-col rounded-sm">
+                    <img src="../assets/images/model3/rojo.jpeg" id="coche" alt="" class="h-5/6">
+                    <h2 class="mb-4 text-3xl text-center text-white font-semibold tracking-wider">Tesla Model 3 Performance</h2>
                 </div>
-                <div class=" w-2/5 text-white">
-                    <h4>Model 3 <span id="color"></span></h4>
-                    <p></p>
-                    <div class="flex">
-                        <img src="../assets/images/model3/color_rojo.avif" id="rojo" alt="" class="w-[30px]">
-                        <img src="../assets/images/model3/color_azul.avif" id="azul" alt="" class="w-[30px]">
-                        <img src="../assets/images/model3/color_blanco.avif" id="blanco" alt="" class="w-[30px]">
-                        <img src="../assets/images/model3/color_negro.avif" id="negro" alt="" class="w-[30px]">
+                <div class=" w-2/5 text-white flex flex-col justify-center gap-6 ">
+                    <h4 class="text-3xl">Model 3 <span id="color" class="capitalize">Rojo</span></h4>
+                    <p class="font-light tracking-wider">Nuestro último Track Mode calibra los mandos relacionados con la suspensión adaptable, el chasis y el tren motriz para
+                    ofrecerle más control al volante. Al conducir en pista, puede personalizar el equilibrio de conducción, el control de
+                    estabilidad y el freno regenerativo a su gusto.</p>
+                    <div class="flex gap-4" id="imagesColor">
+                        <img src="../assets/images/model3/color_rojo.avif" alt="rojo" class="w-[30px] hover:border-2 border-slate-400 rounded-2xl hover:p-[0.15rem]">
+                        <img src="../assets/images/model3/color_azul.avif" alt="azul" class="w-[30px] hover:border-2 border-slate-400 rounded-2xl hover:p-[0.15rem]">
+                        <img src="../assets/images/model3/color_blanco.avif" alt="blanco" class="w-[30px] hover:border-2 border-slate-400 rounded-2xl hover:p-[0.15rem]">
+                        <img src="../assets/images/model3/color_negro.avif" alt="negro" class="w-[30px] hover:border-2 border-slate-400 rounded-2xl hover:p-[0.15rem]">
                     </div>
                 </div>
             </section>
         </main>
         <!-- Footer -->
         <footer class="mt-12">
-            <h2 class="text-3xl font-medium">Tesla</h2>
-            <hr class="bg-black h-1">
             <!-- Section of footer -->
             <section
-                class="border border-red-300 grid grid-rows-2 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 ">
+                class="border border-red-300 bg-slate-300 grid grid-rows-2 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 ">
                 <div class="border border-blue-300 
                 md:col-start-1 md:row-start-1 md:row-end-2 md:col-end-2 
                 lg:col-start-1 lg:row-start-1 lg:row-end-3 lg:col-end-2 
@@ -129,7 +129,7 @@
                     </ul>
                 </div>
             </section>
-            <div>
+            <div class="bg-slate-300">
                 <ul class="hidden gap-4 justify-end lg:flex">
                     <li><a href="#">Terminos y condiciones</a></li>
                     <li><a href="#">Privacidad</a></li>
@@ -139,6 +139,8 @@
             </div>
         </footer>
     </div>
+    <!-- JS -->
+    <script src="../js/script.js"></script>
 </body>
 
 </html>
