@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tesla | Model Y</title>
+    <link rel="stylesheet" href="../output.css">
+    <link rel="shortcut icon" href="../assets/images/favion.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+        integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="bg-black">
+        <!-- Cbecera -->
+        <header class="mx-w-full bg-[url('./assets/images/modelY/img1.jpg')] bg-no-repeat bg-cover">
+            <!-- Navegador -->
+            <div class="max-w-full flex justify-around items-center p-4">
+                <h1 class="text-2xl">Tesla</h1>
+                <!-- Navbar -->
+                <nav class="hidden lg:flex">
+                    <ul class="flex gap-12">
+                        <li><a href="../index.html" class="text-xl">Inicio</a></li>
+                        <li><a href="vehiculos.html" class="text-xl">Vehiculos</a></li>
+                        <li><a href="" class="text-xl">Carga</a></li>
+                    </ul>
+                </nav>
+                <div class="hidden lg:flex gap-3">
+                    <a href="login.html" class="text-xl"><i class="fa-solid fa-user"></i></a>
+                    <a href="" class="text-xl"><i class="fa-solid fa-circle-question"></i></a>
+                </div>
+                <!-- Menu hamburguesa -->
+                <div class="block text-3xl lg:hidden">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </div>
+            <!-- Coche -->
+            <div class="mt-12 flex flex-col justify-between text-center h-[650px] p-12">
+                <div>
+                    <h2 class="text-5xl font-semibold">Model Y</h2>
+                </div>
+                <div class="flex gap-12 justify-center text-white">
+                    <div class="div">
+                        <p class="text-xl font-semibold">+ 2100</p>
+                        <p class="">Litros de carga</p>
+                    </div>
+                    <div class="div">
+                        <p class="text-xl font-semibold">600 km</p>
+                        <p class="">Anatomia</p>
+                    </div>
+                    <div class="div">
+                        <p class="text-xl font-semibold">AWD</p>
+                        <p class="">Motor dual</p>
+                    </div>
+                    <div class="flex items-center">
+                        <button class="bg-blue-500 rounded-md p-2 w-[150px]">Encargar</button>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- Cuerpo -->
+        <main class="mx-w-full">
+            <!-- Section Prueba Conduccion -->
+            <section class="mx-w-full flex justify-center gap-12 mt-12">
+                <div class="text-white w-2/6 p-4">
+                    <h2 class="text-4xl font-semibold">Programa una prueba de conduccion</h2>
+                    <p class="mt-4 mb-6">Introduzca su código zip para encontrar centros de exposición de Tesla cercanos:</p>
+                    <form action="">
+                        <div class="flex flex-col gap-2 mb-6">
+                            <label for="">Codigo Postal</label>
+                            <input type="text" placeholder="45600" class="p-2 rounded-md w-[200px] bg-slate-700 placeholder:text-slate-300 focus:outline-none">
+                        </div>
+                        <button class="bg-blue-500 rounded-md p-2 w-[150px]">Siguiente</button>
+                    </form>
+                </div>
+                <div class="w-1/2">
+                    <img src="../assets/images/modelY/img_form.avif" alt="" class="rounded-md">
+                </div>
+            </section>
+            <!-- Section Info -->
+            <section class="mx-w-full gap-6 bg-white grid grid-cols-3 grid-rows-3 p-12">
+                <div class="mt-12 bg-[url('./assets/images/modelY/app.webp')] bg-cover rounded-md col-span-2 row-span-1 h-[400px]">
+                    <!-- Aparece de primeras -->
+                    <div class="flex justify-between p-4 items-center">
+                        <h3 class="text-white text-2xl">Aplicacion tesla</h3>
+                        <i class="fa-solid fa-circle-info text-white text-xl"></i>
+                    </div>
+                    <!-- Aparece con el hover -->
+                    <div></div>
+                </div>
+                <div class="mt-12 bg-[url('./assets/images/modelY/videojuego.webp')] bg-cover rounded-md col-span-1 row-span-1 h-[400px]">
+                    <!-- Aparece de primeras -->
+                    <div>
+                        <h3></h3>
+                    </div>
+                    <!-- Aparece con el hover -->
+                    <div></div>
+                </div>
+                <div class="bg-[url('./assets/images/modelY/chofer.jpg')] bg-no-repeat bg-cover rounded-md col-span-3 row-span-1 h-[400px]">
+                    <!-- Aparece de primeras -->
+                    <div>
+                        <h3></h3>
+                    </div>
+                    <!-- Aparece con el hover -->
+                    <div></div>
+                </div>
+                <div class="bg-[url('./assets/images/modelY/audio.jpg')] bg-cover rounded-md col-span-1 row-span-1 h-[400px]">
+                    <!-- Aparece de primeras -->
+                    <div>
+                        <h3></h3>
+                    </div>
+                    <!-- Aparece con el hover -->
+                    <div></div>
+                </div>
+                <div class="bg-[url('./assets/images/modelY/centinela.webp')] bg-cover rounded-md col-span-2 row-span-1 h-[400px]">
+                    <!-- Aparece de primeras -->
+                    <div>
+                        <h3></h3>
+                    </div>
+                    <!-- Aparece con el hover -->
+                    <div></div>
+                </div>
+            </section>
+        </main>
+        <!-- Footer -->
+        <footer class="">
+            <!-- Section of footer -->
+            <section
+                class="border border-red-300 bg-slate-300 grid grid-rows-2 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 ">
+                <div class="border border-blue-300 
+                md:col-start-1 md:row-start-1 md:row-end-2 md:col-end-2 
+                lg:col-start-1 lg:row-start-1 lg:row-end-3 lg:col-end-2 
+                xl:col-start-1 xl:row-start-1 xl:row-end-3 xl:col-end-2 ">
+                    <ul class="flex gap-4 justify-center lg:block xl:flex">
+                        <li><a href="#">Modelos</a></li>
+                        <li><a href="#">Distribuidores</a></li>
+                        <li><a href="#">Conocenos</a></li>
+                        <li><a href="#">Corporativo</a></li>
+                    </ul>
+                </div>
+                <div class="border border-yellow-300 text-center
+                md:col-start-1 md:row-start-2 md:row-end-3 md:col-end-3 
+                lg:col-start-2 lg:row-start-1 lg:row-end-3 lg:col-end-3 
+                xl:col-start-2 xl:row-start-1 xl:row-end-3 xl:col-end-3 ">
+                    <label for="">Encuntra tu concesionario mas cercano</label>
+                    <div>
+                        <input type="text" placeholder="Ciudad/Codigo Postal">
+                    </div>
+                </div>
+                <div class="border border-green-300 
+                md:col-start-2 md:row-start-1 md:row-end-2 md:col-end-3 
+                lg:col-start-3 lg:row-start-1 lg:row-end-3 lg:col-end-4 
+                xl:col-start-3 xl:row-start-1 xl:row-end-3 xl:col-end-4">
+                    <ul class="flex gap-4 justify-center">
+                        <li><i class="fa-brands fa-facebook"></i></li>
+                        <li><i class="fa-brands fa-instagram"></i></li>
+                        <li><i class="fa-brands fa-x-twitter"></i></li>
+                        <li><i class="fa-brands fa-tiktok"></i></li>
+                        <li><i class="fa-brands fa-youtube"></i></li>
+                    </ul>
+                </div>
+            </section>
+            <div class="bg-slate-300">
+                <ul class="hidden gap-4 justify-end lg:flex">
+                    <li><a href="#">Terminos y condiciones</a></li>
+                    <li><a href="#">Privacidad</a></li>
+                    <li><a href="#">Cookies</a></li>
+                    <li>© Tesla 2024</li>
+                </ul>
+            </div>
+        </footer>
+    </div>
+    <!-- JS -->
+    <script src="../js/script.js"></script>
+</body>
+
+</html>
