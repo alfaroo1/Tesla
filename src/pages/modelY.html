@@ -63,7 +63,7 @@
         <!-- Cuerpo -->
         <main class="mx-w-full">
             <!-- Section Prueba Conduccion -->
-            <section class="mx-w-full flex justify-center gap-12 mt-12">
+            <section class="mx-w-full flex justify-center gap-12 mt-12 p-4">
                 <div class="text-white w-2/6 p-4">
                     <h2 class="text-4xl font-semibold">Programa una prueba de conduccion</h2>
                     <p class="mt-4 mb-6">Introduzca su código zip para encontrar centros de exposición de Tesla cercanos:</p>
@@ -80,19 +80,19 @@
                 </div>
             </section>
             <!-- Section Info -->
-            <section class="mx-w-full gap-6 bg-white grid grid-cols-3 grid-rows-3 p-12">
-                <div class="relative mt-12 bg-[url('./assets/images/modelY/app.webp')] bg-cover rounded-md col-span-2 row-span-1 h-[400px]">
+            <section class="mx-w-full gap-6 bg-white xl:grid lg:grid grid-cols-3 grid-rows-3 p-12 md:flex md:flex-wrap">
+                <div class="relative mt-12 bg-[url('./assets/images/modelY/app.webp')] bg-cover h-[400px] rounded-md col-span-2 row-span-1">
                     <!-- Aparece con el hover -->
-                    <div class="opacity-0 hover:opacity-100 bg-black bg-opacity-50 max-w-full h-full rounded-md flex flex-col justify-around items-start p-4">
+                    <div class="opacity-0 hover:opacity-100 hover:transition-opacity hover:duration-700 bg-black bg-opacity-50 max-w-full h-full rounded-md flex flex-col justify-around items-start p-4">
                         <img src="../assets/images/modelY/tesla.avif" alt="" class="w-[70px]">
                         <p class="text-white text-lg">Acceda, preacondicione y supervise su Model Y desde cualquier parte.</p>
                         <button class="bg-black text-white p-2 w-[150px] rounded-md">Descargar ahora</button>
                     </div>
                 </div>
-                <div class="mt-12 bg-[url('./assets/images/modelY/videojuego.webp')] bg-cover rounded-md col-span-1 row-span-1 h-[400px]">
+                <div class="mt-12 bg-[url('./assets/images/modelY/videojuego.webp')] bg-cover h-[400px] rounded-md col-span-1 row-span-1">
                     <!-- Aparece con el hover -->
                     <div
-                        class="opacity-0 hover:opacity-100 bg-black bg-opacity-50 max-w-full h-full rounded-md flex flex-col justify-around items-start p-4">
+                        class="opacity-0 hover:opacity-100 hover:transition-opacity hover:duration-700 bg-black bg-opacity-50 max-w-full h-full rounded-md flex flex-col justify-around items-start p-4">
                         <img src="../assets/images/modelY/Model-Y-Tiles-Arcade-Secondary-Desktop.avif" alt="" class="w-[200px]">
                         <p class="text-white text-lg">Disfrute del acceso a diversos juegos a través de la pantalla táctil de su coche.</p>
                         <button class="bg-black text-white p-2 w-[150px] rounded-md">Mas info</button>
@@ -101,7 +101,7 @@
                 <div class="bg-[url('./assets/images/modelY/chofer.avif')] bg-no-repeat bg-cover rounded-md col-span-3 row-span-1">
                     <!-- Aparece con el hover -->
                     <div
-                        class="opacity-0 hover:opacity-100 bg-black bg-opacity-50 max-w-full h-full rounded-md flex items-center flex-row-reverse justify-around p-4">
+                        class="opacity-0 hover:opacity-100 hover:transition-opacity hover:duration-700 bg-black bg-opacity-50 max-w-full h-full rounded-md flex items-center flex-row-reverse justify-around p-4">
                         <img src="../assets/images/modelY/perro.avif" alt="" class="w-[300px]">
                         <p class="text-white text-2xl">Mantenga a sus amigos peludos a gusto mientras está fuera.</p>
                     </div>
@@ -109,7 +109,7 @@
                 <div class="bg-[url('./assets/images/modelY/audio.jpg')] bg-cover rounded-md col-span-1 row-span-1 h-[400px]">
                     <!-- Aparece con el hover -->
                     <div
-                        class="opacity-0 hover:opacity-100 bg-black bg-opacity-50 max-w-full h-full rounded-md flex flex-col justify-around items-start p-4">
+                        class="opacity-0 hover:opacity-100 hover:transition-opacity hover:duration-700 bg-black bg-opacity-50 max-w-full h-full rounded-md flex flex-col justify-around items-start p-4">
                         <img src="../assets/images/modelY/sonido.png" alt="" class="w-[200px]">
                         <p class="text-white text-lg">Experimente un sonido totalmente envolvente en todos los asientos.</p>
                         <button class="bg-black text-white p-2 w-[180px] rounded-md">Conectar una prueba</button>
@@ -118,17 +118,17 @@
                 <div class="bg-[url('./assets/images/modelY/centinela.webp')] bg-cover rounded-md col-span-2 row-span-1 h-[400px]">
                     <!-- Aparece con el hover -->
                     <div
-                        class="opacity-0 hover:opacity-100 bg-black bg-opacity-50 max-w-full h-full rounded-md flex flex-col justify-around items-start p-4">
+                        class="opacity-0 hover:opacity-100 hover:transition-opacity hover:duration-700 bg-black bg-opacity-50 max-w-full h-full rounded-md flex flex-col justify-around items-start p-4">
                         <img src="../assets/images/modelY/rec.png" alt="" class="w-[50px]">
                         <p class="text-white text-lg">Compruebe el estado de su vehículo y registre cualquier actividad sospechosa.</p>
                         <button class="bg-black text-white p-2 w-[150px] rounded-md">Saber mas</button>
                     </div>
                 </div>
             </section>
-            <section class="bg-[url('./assets/images/modelY/section3.avif')] bg-cover h-[980px] mb-[70px]">
-                <div class="grid grid-cols-2 text-white p-4 mt-[900px]">
-                    <h3 class="text-2xl font-semibold col-span-1">Cabina espaciosa</h3>
-                    <p class="text-sm col-span-1 ">La posición de conducción elevada y el salpicadero bajo ofrecen el conductor una vista imponente de la carretera.
+            <section class="bg-[url('./assets/images/modelY/section3.avif')] bg-cover h-[980px] mb-[150px]">
+                <div class="h-full grid grid-cols-3 text-white p-4 items-end justify-items-center pb-14">
+                    <h3 class="text-2xl font-semibold col-span-1 mb-7">Cabina espaciosa</h3>
+                    <p class="text-sm col-span-2 tracking-wider">La posición de conducción elevada y el salpicadero bajo ofrecen el conductor una vista imponente de la carretera.
                     Además, la conducción resulta cómoda y silenciosa gracias al espacio adicional para las piernas, el amplio espacio de
                     almacenamiento y el techo de cristal acústico con protección contra reflejos, el calor y los rayos UV.</p>
                 </div>
