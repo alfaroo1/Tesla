@@ -3,6 +3,7 @@ const contImages = document.getElementById('imagesColor');
 const coche = document.getElementById('coche');
 const color = document.getElementById('color');
 //Funciones
+//Cambiar la imagen del color del coche
 const sacarColor = (event) =>{
     if (event.target.tagName == "IMG") {
         //Recorremos las imagenes pa quitarlas los bordes
@@ -20,6 +21,6 @@ const sacarColor = (event) =>{
         event.target.style.borderRadius = "50%";
     }
 }
-
 //Eventos
 contImages.addEventListener('click',sacarColor);
+

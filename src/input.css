@@ -1,3 +1,20 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+/* ESTILOS QUE SE IRAN PONIENDO Y QUITANDO */
+.apagado{
+    width: 300px;
+    text-align: left;
+    padding-top: 1rem;
+    border-top: 2px solid #A2A3A6;
+    color: #A2A3A6;
+}
+.encendido{
+    width: 300px;
+    text-align: left;
+    padding-top: 1rem;
+    border-top: 4px solid black;
+    color: black;
+}
