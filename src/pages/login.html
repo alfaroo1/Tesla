@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tesla | Vehiculos</title>
+    <title>Tesla | Inicia Sesion</title>
     <link rel="stylesheet" href="../output.css">
     <link rel="shortcut icon" href="../assets/images/favion.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
@@ -13,14 +13,37 @@
 </head>
 
 <body>
+    <!-- Cbecera -->
+    <header
+        class="max-w-full sticky z-auto top-0 left-0 right-0 flex bg-gradient-to-r from-slate-400  justify-around items-center p-4">
+        <h1 class="text-3xl">Tesla</h1>
+        <!-- Navbar -->
+        <nav class="hidden lg:flex">
+            <ul class="flex gap-12">
+                <li><a href="../index.html" class="text-2xl">Inicio</a></li>
+                <li><a href="./pages/vehiculos.html" class="text-2xl">Vehiculos</a></li>
+                <li><a href="./carga.html" class="text-2xl">Carga</a></li>
+            </ul>
+        </nav>
+        <div class="hidden lg:flex">
+            <a href="./login.html" class="text-2xl"><i class="fa-solid fa-user"></i></a>
+            <a href="#" class="text-2xl"><i class="fa-solid fa-circle-question"></i></a>
+        </div>
+        <!-- Menu hamburguesa -->
+        <div class="block text-3xl lg:hidden">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+    </header>
+    <!-- Cuerpo Login -->
     <div class="mx-w-full flex h-screen items-center justify-center bg-slate-300">
         <div class="w-[500px] h-[400px] bg-gradient-to-tl from-slate-500 rounded-sm">
+            <!-- Formulario -->
             <form action="" novalidate>
                 <div class="p-4 flex flex-col items-center gap-6 h-[400px] text-center">
                     <h1 class="text-2xl text-slate-900">Iniciar sesion</h1>
                     <div class="flex flex-col gap-4">
                         <div class="flex flex-col items-start gap-2">
-                            <label for="" class="text-slate-900">Nombre de Usuario</label>
+                            <label for="" class="text-slate-900">Correo Electronico</label>
                             <input type="mail" class="p-2 bg-slate-300 text-white placeholder:text-white border-b-4 border-b-white rounded-md focus:text-slate-400 focus:outline-none focus:border-b-4 focus:border-b-slate-400" placeholder="ejemplo@gmail.com" required>
                         </div>
                         <div class="flex flex-col items-start gap-2">
@@ -33,7 +56,7 @@
                     </div>
                     <div>
                         <hr>
-                        <p><a href="" class="text-slate-900">¿No tienes cuenta todavia? Registrate</a></p>
+                        <p><a href="./register.html" class="text-slate-900">¿No tienes cuenta todavia? Registrate</a></p>
                     </div>
                 </div>
             </form>

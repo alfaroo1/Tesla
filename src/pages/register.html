@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tesla | Registrate</title>
+    <link rel="stylesheet" href="../output.css">
+    <link rel="shortcut icon" href="../assets/images/favion.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+        integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <!-- Cbecera -->
+    <header
+        class="max-w-full sticky z-auto top-0 left-0 right-0 flex bg-gradient-to-r from-slate-400  justify-around items-center p-4">
+        <h1 class="text-3xl">Tesla</h1>
+        <!-- Navbar -->
+        <nav class="hidden lg:flex">
+            <ul class="flex gap-12">
+                <li><a href="../index.html" class="text-2xl">Inicio</a></li>
+                <li><a href="./pages/vehiculos.html" class="text-2xl">Vehiculos</a></li>
+                <li><a href="./carga.html" class="text-2xl">Carga</a></li>
+            </ul>
+        </nav>
+        <div class="hidden lg:flex">
+            <a href="./login.html" class="text-2xl"><i class="fa-solid fa-user"></i></a>
+            <a href="#" class="text-2xl"><i class="fa-solid fa-circle-question"></i></a>
+        </div>
+        <!-- Menu hamburguesa -->
+        <div class="block text-3xl lg:hidden">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+    </header>
+    <!-- Cuerpo Login -->
+    <div class="mx-w-full flex h-screen items-center justify-center bg-slate-300">
+        <div class="w-[500px] max-h-full bg-gradient-to-tl from-slate-500 rounded-sm">
+            <!-- Formulario -->
+            <form action="" id="form" novalidate>
+                <div class="p-4 flex flex-col items-center gap-6 text-center">
+                    <h1 class="text-2xl text-slate-900">Registrate</h1>
+                    <div class="flex flex-col gap-4">
+                        <!-- Contenedor Nombre -->
+                        <div class="flex flex-col items-start gap-2 max-w-full">
+                            <label for="" class="text-slate-900">Nombre</label>
+                            <input type="text" id="nombre"
+                                class="p-2 w-full bg-slate-300 text-white placeholder:text-white border-b-4 border-b-white rounded-md focus:text-slate-400 focus:outline-none focus:border-b-4 focus:border-b-slate-400"
+                                placeholder="Nombre" required>
+                                <p id="errornombre" class="text-sm text-red-400 font-medium"></p>
+                        </div>
+                        <!-- Contenedor Apellidos -->
+                        <div class="flex gap-4">
+                            <!-- Ape 1 -->
+                            <div class="flex flex-col items-start gap-2">
+                                <label for="" class="text-slate-900">Primer Apellido</label>
+                                <input type="text" id="ape1"
+                                    class="p-2 bg-slate-300 text-white placeholder:text-white border-b-4 border-b-white rounded-md focus:text-slate-400 focus:outline-none focus:border-b-4 focus:border-b-slate-400"
+                                    placeholder="Apellido 1" required>
+                                    <p id="errorape1" class="text-sm text-red-400 font-medium"></p>
+                            </div>
+                            <!-- Ape 2 -->
+                            <div class="flex flex-col items-start gap-2">
+                                <label for="" class="text-slate-900">Segundo Apellido</label>
+                                <input type="text" id="ape2"
+                                    class="p-2 bg-slate-300 text-white placeholder:text-white border-b-4 border-b-white rounded-md focus:text-slate-400 focus:outline-none focus:border-b-4 focus:border-b-slate-400"
+                                    placeholder="Apellido 2" required>
+                                    <p id="errorape2" class="text-sm text-red-400 font-medium"></p>
+                            </div>
+                        </div>
+                        <!-- Contenedor Tarjeta Credito -->
+                        <div class="flex flex-col items-start gap-2 max-w-full">
+                            <label for="" class="text-slate-900">Tarjeta de Credito</label>
+                            <input type="text" id="tarjet"
+                                class="p-2 w-full bg-slate-300 text-white placeholder:text-white border-b-4 border-b-white rounded-md focus:text-slate-400 focus:outline-none focus:border-b-4 focus:border-b-slate-400"
+                                placeholder="1234123412341234" maxlength="16" required>
+                                <p id="errortarjeta" class="text-sm text-red-400 font-medium"></p>
+                        </div>
+                        <!-- Contenedor Correo Electronico -->
+                        <div class="flex flex-col items-start gap-2 max-w-full">
+                            <label for="" class="text-slate-900">Correo Electronico</label>
+                            <input type="mail" id="correo"
+                                class="p-2 w-full bg-slate-300 text-white placeholder:text-white border-b-4 border-b-white rounded-md focus:text-slate-400 focus:outline-none focus:border-b-4 focus:border-b-slate-400"
+                                placeholder="ejemplo@gmail.com" required>
+                                <p id="errorcorreo" class="text-sm text-red-400 font-medium"></p>
+                        </div>
+                        <!-- Contenedor password -->
+                        <div class="flex flex-col items-start gap-2 max-w-full">
+                            <label for="" class="text-slate-900">Contraseña</label>
+                            <input type="password" id="contraseña"
+                                class="p-2 w-full bg-slate-300 text-white placeholder:text-white border-b-4 border-b-white rounded-md focus:text-slate-400 focus:outline-none focus:border-b-4 focus:border-b-slate-400 "
+                                placeholder="Contraseña" minlength="8" required>
+                                <p id="errorpass" class="text-sm text-red-400 font-medium"></p>
+                        </div>
+                        <!-- Contenedor buttons -->
+                        <div class="flex justify-start gap-6">
+                            <button type="submit"
+                                class="bg-slate-500 text-white p-2 w-[100px] rounded-md">Enviar</button>
+                            <button type="reset" class="bg-slate-500 text-white p-2 w-[100px] rounded-md">Borrar</button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-- JS para validar formulario -->
+    <script src="../js/validacionRegister.js"></script>
+</body>
+
+</html>
