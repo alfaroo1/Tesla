@@ -20,6 +20,8 @@ const validarInputs = (event) => {
 
     if (elemento.tagName == "INPUT" && elemento.validity.valid){
         elemento.nextElementSibling.textContent = "";
+        elemento.classList.remove("border-2");
+        elemento.classList.remove("border-red-400");
     }
 }
 //Validacion tarjeta de credito
