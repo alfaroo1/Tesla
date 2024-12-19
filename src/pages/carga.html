@@ -38,8 +38,8 @@
         <!-- Cuerpo -->
         <main class="container max-w-full">
             <!-- Section poinst of carga -->
-            <section class="flex w-full p-6 gap-6">
-                <div class="w-[600px] flex flex-col justify-between">
+            <section class="flex flex-col lg:flex lg:flex-row w-full p-6 gap-6">
+                <div class="w-full flex flex-row lg:w-[600px] lg:flex lg:flex-col justify-between">
                     <div class="mt-4">
                         <h1 class="text-xl font-medium">Destinos</h1>
                         <h2 class="text-4xl font-semibold mt-2">Vaya a cualquier lugar</h2>
@@ -47,31 +47,31 @@
                         las principales rutas cerca de servicios prácticos, los Supercargadores le mantienen siempre cargado cuando está lejos
                         de casa. Solo tiene que conectarlo, cargarlo y listo.</p>
                     </div>
-                    <div class="mb-4 text-center">
+                    <div class="mb-4 flex items-end ml-4 lg:block lg:justify-center lg:ml-0">
                         <button class="p-2 w-[150px] border-2 font-medium border-black rounded-md">Donde estamos</button>
                     </div>
                 </div>
-                <div class="w-full">
+                <div class="hidden sm:flex sm:w-full">
                     <img src="../assets/images/points-carga.avif" alt="" srcset="" class="w-full rounded-sm">
                 </div>
             </section>
             <!-- Section video of carga -->
-            <section class="container mt-6">
-                <div class="flex justify-center gap-6">
-                    <div class="w-2/5">
+            <section class="w-full mt-6 flex lg:block">
+                <div class="flex flex-col ml-6 lg:flex lg:flex-row lg:justify-center gap-6">
+                    <div class="w-full lg:w-2/5">
                         <h2 class="text-xl">Experiencia</h2>
                         <h3 class="text-3xl font-semibold">Libertad para viajar</h3>
                     </div>
-                    <div class="w-2/5">
+                    <div class="w-full lg:w-2/5">
                         <p class="text-sm mt-2">Para usar un Supercargador, simplemente enchúfelo y cargue automáticamente. Con la aplicación de Tesla, puede ver la
                         disponibilidad de puestos de Supercargadores, supervisar el estado de carga o recibir una notificación cuando el
                         vehículo esté listo para iniciar la marcha.</p>
                     </div>
                 </div>
-                <div>
-                    <video src="../assets/videos/carga.webm" autoplay loop muted class="p-12"></video>
+                <div class="hidden sm:flex ml-6 lg:ml-0">
+                    <video src="../assets/videos/carga.webm" autoplay loop muted class="p-12 rounded-sm"></video>
                 </div>
-                <div id="cards" class="flex justify-center gap-6">
+                <div id="cards" class="hidden lg:flex lg:justify-center lg:gap-6">
                     <button class="encendido">
                         <h3 class="mb-4 text-xl">Navegue</h3>
                         <p class="font-light">Introduzca un destino y Trip Planner calculará su ruta.</p>
@@ -91,7 +91,7 @@
                 </div>
             </section>
             <!-- Section specificaciones wall conector -->
-            <section class="flex bg-black justify-center gap-6 mt-12 h-[700px] items-center">
+            <section class="hidden md:flex bg-black justify-center gap-6 mt-12 h-[700px] items-center">
                 <div class="w-2/5">
                     <img src="../assets/images/wall_conector.avif" alt="">
                 </div>
@@ -165,12 +165,11 @@
         <!-- Footer -->
         <footer class="mt-12">
             <!-- Section of footer -->
-            <section
-                class="border border-red-300 grid grid-rows-2 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 ">
-                <div class="border border-blue-300 
-                md:col-start-1 md:row-start-1 md:row-end-2 md:col-end-2 
-                lg:col-start-1 lg:row-start-1 lg:row-end-3 lg:col-end-2 
-                xl:col-start-1 xl:row-start-1 xl:row-end-3 xl:col-end-2 ">
+            <section class=" bg-white grid grid-rows-2 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3">
+                <div class="
+                        md:col-start-1 md:row-start-1 md:row-end-2 md:col-end-2 
+                        lg:col-start-1 lg:row-start-1 lg:row-end-3 lg:col-end-2 
+                        xl:col-start-1 xl:row-start-1 xl:row-end-3 xl:col-end-2 ">
                     <ul class="flex gap-4 justify-center lg:block xl:flex">
                         <li><a href="#">Modelos</a></li>
                         <li><a href="#">Distribuidores</a></li>
@@ -178,19 +177,19 @@
                         <li><a href="#">Corporativo</a></li>
                     </ul>
                 </div>
-                <div class="border border-yellow-300 text-center
-                md:col-start-1 md:row-start-2 md:row-end-3 md:col-end-3 
-                lg:col-start-2 lg:row-start-1 lg:row-end-3 lg:col-end-3 
-                xl:col-start-2 xl:row-start-1 xl:row-end-3 xl:col-end-3 ">
+                <div class="bg-white text-center
+                        md:col-start-1 md:row-start-2 md:row-end-3 md:col-end-3 
+                        lg:col-start-2 lg:row-start-1 lg:row-end-3 lg:col-end-3 
+                        xl:col-start-2 xl:row-start-1 xl:row-end-3 xl:col-end-3 ">
                     <label for="">Encuntra tu concesionario mas cercano</label>
                     <div>
                         <input type="text" placeholder="Ciudad/Codigo Postal">
                     </div>
                 </div>
-                <div class="border border-green-300 
-                md:col-start-2 md:row-start-1 md:row-end-2 md:col-end-3 
-                lg:col-start-3 lg:row-start-1 lg:row-end-3 lg:col-end-4 
-                xl:col-start-3 xl:row-start-1 xl:row-end-3 xl:col-end-4">
+                <div class="bg-white mb-4
+                        md:col-start-2 md:row-start-1 md:row-end-2 md:col-end-3 
+                        lg:col-start-3 lg:row-start-1 lg:row-end-3 lg:col-end-4 
+                        xl:col-start-3 xl:row-start-1 xl:row-end-3 xl:col-end-4">
                     <ul class="flex gap-4 justify-center">
                         <li><i class="fa-brands fa-facebook"></i></li>
                         <li><i class="fa-brands fa-instagram"></i></li>
@@ -200,8 +199,9 @@
                     </ul>
                 </div>
             </section>
-            <div>
-                <ul class="hidden gap-4 justify-end lg:flex">
+            <hr class="text-black">
+            <div class="bg-white mt-4">
+                <ul class="hidden gap-4 justify-end mt-4 lg:flex">
                     <li><a href="#">Terminos y condiciones</a></li>
                     <li><a href="#">Privacidad</a></li>
                     <li><a href="#">Cookies</a></li>
