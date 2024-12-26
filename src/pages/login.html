@@ -38,17 +38,19 @@
     <div class="mx-w-full flex h-screen items-center justify-center bg-slate-300">
         <div class="w-[500px] h-[400px] bg-gradient-to-tl from-slate-500 rounded-sm">
             <!-- Formulario -->
-            <form action="" novalidate>
+            <form action="" id="form" novalidate>
                 <div class="p-4 flex flex-col items-center gap-6 h-[400px] text-center">
                     <h1 class="text-2xl text-slate-900">Iniciar sesion</h1>
                     <div class="flex flex-col gap-4">
                         <div class="flex flex-col items-start gap-2">
                             <label for="" class="text-slate-900">Correo Electronico</label>
-                            <input type="mail" class="p-2 bg-slate-300 text-white placeholder:text-white border-b-4 border-b-white rounded-md focus:text-slate-400 focus:outline-none focus:border-b-4 focus:border-b-slate-400" placeholder="ejemplo@gmail.com" required>
+                            <input type="mail" id="correo" class="p-2 bg-slate-300 text-white placeholder:text-white border-b-4 border-b-white rounded-md focus:text-slate-400 focus:outline-none focus:border-b-4 focus:border-b-slate-400" placeholder="ejemplo@gmail.com" required>
+                            <p id="errorcorreo" class="text-sm text-red-400 font-medium"></p>
                         </div>
                         <div class="flex flex-col items-start gap-2">
                             <label for="" class="text-slate-900">Contraseña</label>
-                            <input type="password" class="p-2 bg-slate-300 text-white placeholder:text-white border-b-4 border-b-white rounded-md focus:text-slate-400 focus:outline-none focus:border-b-4 focus:border-b-slate-400 " placeholder="Contraseña" required>
+                            <input type="password" id="contraseña" class="p-2 bg-slate-300 text-white placeholder:text-white border-b-4 border-b-white rounded-md focus:text-slate-400 focus:outline-none focus:border-b-4 focus:border-b-slate-400 " placeholder="Contraseña" required>
+                            <p id="errorpass" class="text-sm text-red-400 font-medium"></p>
                         </div>
                         <div>
                             <button type="submit" class="bg-slate-400 text-white p-2 w-[100px] rounded-md">Enviar</button>
@@ -62,6 +64,8 @@
             </form>
         </div>
     </div>
+    <!-- JavaScript -->
+    <script src="../js/validacionLogin.js"></script>
 </body>
 
 </html>
