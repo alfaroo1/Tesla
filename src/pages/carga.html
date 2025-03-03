@@ -17,40 +17,47 @@
         <!-- Cbecera -->
         <header class="mx-w-full bg-gradient-to-r from-slate-400">
             <!-- Navegador -->
-            <div class="max-w-full flex justify-around items-center p-4">
+            <div class="flex items-center justify-between p-4">
                 <h1 class="text-2xl">Tesla</h1>
-                <!-- Navbar -->
-                <nav class="hidden lg:flex">
-                    <ul class="flex gap-12">
+                <!-- Menu resolucion a partir de lg  -->
+                <nav class="hidden lg:flex lg:items-center lg:gap-8">
+                    <ul class="flex gap-8">
                         <li><a href="../index.html" class="text-xl">Inicio</a></li>
                         <li><a href="./model3.html" class="text-xl">Model 3</a></li>
                         <li><a href="./modelY.html" class="text-xl">Model Y</a></li>
                         <li><a href="./carga.html" class="text-xl">Carga</a></li>
                     </ul>
                 </nav>
-                <div class="hidden lg:flex lg:gap-4">
-                    <a href="./login.html" class="text-xl"><i class="fa-solid fa-user"></i></a>
-                    <a href="" class="text-xl"><i class="fa-solid fa-circle-question"></i></a>
-                </div>
-                <!-- Menu hamburguesa -->
-                <div class="block text-3xl lg:hidden">
+            
+                <!-- Logo menu hamburguesa -->
+                <div id="navburger" class="block text-3xl lg:hidden">
                     <i class="fa-solid fa-bars"></i>
                 </div>
             </div>
+            
+            <!-- Menu de resolucion menor lg -->
+            <nav id="mobile-menu" class="hidden bg-gradient-to-r from-slate-400 lg:hidden">
+                <ul class="flex flex-col items-center gap-4 p-4">
+                    <li><a href="../index.html" class="text-xl text-white">Inicio</a></li>
+                    <li><a href="./model3.html" class="text-xl text-white">Model 3</a></li>
+                    <li><a href="./modelY.html" class="text-xl text-white">Model Y</a></li>
+                    <li><a href="./carga.html" class="text-xl text-white">Carga</a></li>
+                </ul>
+            </nav>
         </header>
         <!-- Cuerpo -->
         <main class="container max-w-full">
             <!-- Section poinst of carga -->
-            <section class="flex flex-col lg:flex lg:flex-row w-full p-6 gap-6">
+            <section class="flex flex-col w-full gap-6 p-6 lg:flex lg:flex-row">
                 <div class="w-full flex flex-row lg:w-[600px] lg:flex lg:flex-col justify-between">
                     <div class="mt-4">
                         <h1 class="text-xl font-medium">Destinos</h1>
-                        <h2 class="text-4xl font-semibold mt-2">Vaya a cualquier lugar</h2>
+                        <h2 class="mt-2 text-4xl font-semibold">Vaya a cualquier lugar</h2>
                         <p class="mt-6 text-sm">Con más de 60.000 Supercargadores, Tesla posee y opera la red global de carga rápida más grande del mundo. Ubicados en
                         las principales rutas cerca de servicios prácticos, los Supercargadores le mantienen siempre cargado cuando está lejos
                         de casa. Solo tiene que conectarlo, cargarlo y listo.</p>
                     </div>
-                    <div class="mb-4 flex items-end ml-4 lg:block lg:justify-center lg:ml-0">
+                    <div class="flex items-end mb-4 ml-4 lg:block lg:justify-center lg:ml-0">
                         <button class="p-2 w-[150px] border-2 font-medium border-black rounded-md
                         trasition ease-linear hover:bg-black hover:text-white duration-300">Donde estamos</button>
                     </div>
@@ -60,19 +67,19 @@
                 </div>
             </section>
             <!-- Section video of carga -->
-            <section class="w-full mt-6 flex lg:block">
-                <div class="flex flex-col ml-6 lg:flex lg:flex-row lg:justify-center gap-6">
+            <section class="flex w-full mt-6 lg:block">
+                <div class="flex flex-col gap-6 ml-6 lg:flex lg:flex-row lg:justify-center">
                     <div class="w-full lg:w-2/5">
                         <h2 class="text-xl">Experiencia</h2>
                         <h3 class="text-3xl font-semibold">Libertad para viajar</h3>
                     </div>
                     <div class="w-full lg:w-2/5">
-                        <p class="text-sm mt-2">Para usar un Supercargador, simplemente enchúfelo y cargue automáticamente. Con la aplicación de Tesla, puede ver la
+                        <p class="mt-2 text-sm">Para usar un Supercargador, simplemente enchúfelo y cargue automáticamente. Con la aplicación de Tesla, puede ver la
                         disponibilidad de puestos de Supercargadores, supervisar el estado de carga o recibir una notificación cuando el
                         vehículo esté listo para iniciar la marcha.</p>
                     </div>
                 </div>
-                <div class="hidden sm:flex ml-6 lg:ml-0">
+                <div class="hidden ml-6 sm:flex lg:ml-0">
                     <video src="../assets/videos/carga.webm" autoplay loop muted class="p-12 rounded-sm"></video>
                 </div>
                 <div id="cards" class="hidden lg:flex lg:justify-center lg:gap-6">
@@ -101,65 +108,65 @@
                 </div>
                 <div class="w-2/5 text-white">
                     <h3 class="text-2xl font-light">Especificaciones del <span class="font-semibold">Wall Conector</span></h3>
-                    <div class="flex mt-6 gap-12">
+                    <div class="flex gap-12 mt-6">
                         <!-- Lista 1 -->
                         <ul>
-                            <li class="border-t border-slate-300 pt-2 mb-4">
+                            <li class="pt-2 mb-4 border-t border-slate-300">
                                 <h4 class="text-sm">Tension</h4>
-                                <p class="text-sm font-light mt-1">400 V Trifasico</p>
+                                <p class="mt-1 text-sm font-light">400 V Trifasico</p>
                             </li>
-                            <li class="border-t border-slate-300 pt-2 mb-4">
+                            <li class="pt-2 mb-4 border-t border-slate-300">
                                 <h4 class="text-sm">Salida de corriente maxima</h4>
-                                <p class="text-sm font-light mt-1">32 amperios</p>
+                                <p class="mt-1 text-sm font-light">32 amperios</p>
                             </li>
-                            <li class="border-t border-slate-300 pt-2 mb-4">
+                            <li class="pt-2 mb-4 border-t border-slate-300">
                                 <h4 class="text-sm">Potenica de Salida</h4>
-                                <p class="text-sm font-light mt-1">7,4 kW - 22 kW</p>
+                                <p class="mt-1 text-sm font-light">7,4 kW - 22 kW</p>
                             </li>
-                            <li class="border-t border-slate-300 pt-2 mb-4">
+                            <li class="pt-2 mb-4 border-t border-slate-300">
                                 <h4 class="text-sm">Wi-FI</h4>
-                                <p class="text-sm font-light mt-1">2,4 GHz</p>
+                                <p class="mt-1 text-sm font-light">2,4 GHz</p>
                             </li>
-                            <li class="border-t border-slate-300 pt-2 mb-4">
+                            <li class="pt-2 mb-4 border-t border-slate-300">
                                 <h4 class="text-sm">Dimensiones</h4>
-                                <p class="text-sm font-light mt-1">345 mm x 155 mm x 110 mm</p>
+                                <p class="mt-1 text-sm font-light">345 mm x 155 mm x 110 mm</p>
                             </li>
-                            <li class="border-t border-slate-300 pt-2 mb-4">
+                            <li class="pt-2 mb-4 border-t border-slate-300">
                                 <h4 class="text-sm">Longitud de cable</h4>
-                                <p class="text-sm font-light mt-1">7,3 m</p>
+                                <p class="mt-1 text-sm font-light">7,3 m</p>
                             </li>
-                            <li class="border-t border-slate-300 pt-2 mb-4">
+                            <li class="pt-2 mb-4 border-t border-slate-300">
                                 <h4 class="text-sm">Instalacion</h4>
-                                <p class="text-sm font-light mt-1">Interior o exterior</p>
+                                <p class="mt-1 text-sm font-light">Interior o exterior</p>
                             </li>
                         </ul>
                     <!-- Lista 2 -->
                         <ul>
-                            <li class="border-t border-slate-300 pt-2 mb-4">
+                            <li class="pt-2 mb-4 border-t border-slate-300">
                                 <h4 class="text-sm">Seguridad</h4>
-                                <p class="text-sm font-light mt-1">RCD integrado tipo A + CC 6 mA</p>
+                                <p class="mt-1 text-sm font-light">RCD integrado tipo A + CC 6 mA</p>
                             </li>
-                            <li class="border-t border-slate-300 pt-2 mb-4">
+                            <li class="pt-2 mb-4 border-t border-slate-300">
                                 <h4 class="text-sm">Actualizacion de firmware</h4>
-                                <p class="text-sm font-light mt-1">Inhalambrica a traves de WiFI</p>
+                                <p class="mt-1 text-sm font-light">Inhalambrica a traves de WiFI</p>
                             </li>
-                            <li class="border-t border-slate-300 pt-2 mb-4">
+                            <li class="pt-2 mb-4 border-t border-slate-300">
                                 <h4 class="text-sm">Compatiblidad</h4>
-                                <p class="text-sm font-light mt-1">Cualquier vehiculo electrico con un puerto de carga Tipo 2</p>
+                                <p class="mt-1 text-sm font-light">Cualquier vehiculo electrico con un puerto de carga Tipo 2</p>
                             </li>
-                            <li class="border-t border-slate-300 pt-2 mb-4">
+                            <li class="pt-2 mb-4 border-t border-slate-300">
                                 <h4 class="text-sm">Garantia</h4>
-                                <p class="text-sm font-light mt-1">48 meses</p>
+                                <p class="mt-1 text-sm font-light">48 meses</p>
                             </li>
-                            <li class="border-t border-slate-300 pt-2 mb-4">
+                            <li class="pt-2 mb-4 border-t border-slate-300">
                                 <h4 class="text-sm">Adminitracion de energia</h4>
-                                <p class="text-sm font-light mt-1">
+                                <p class="mt-1 text-sm font-light">
                                     <a href="https://www.tesla.com/es_es/support/charging/wall-connector/power-management" target="_blank">Gestion de carga automatica</a>
                                 </p>
                             </li>
-                            <li class="border-t border-slate-300 pt-2 mb-4">
+                            <li class="pt-2 mb-4 border-t border-slate-300">
                                 <h4 class="text-sm">Medicion de energia</h4>
-                                <p class="text-sm font-light mt-1">Medida de consumo para cálculo de ingresos</p>
+                                <p class="mt-1 text-sm font-light">Medida de consumo para cálculo de ingresos</p>
                             </li>
                         </ul>
                     </div>
@@ -167,45 +174,36 @@
             </section>
         </main>
         <!-- Footer -->
-        <footer class="mt-12">
+        <footer class="mt-10">
             <!-- Section of footer -->
-            <section class=" bg-white grid grid-rows-2 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3">
-                <div class="
-                        md:col-start-1 md:row-start-1 md:row-end-2 md:col-end-2 
-                        lg:col-start-1 lg:row-start-1 lg:row-end-3 lg:col-end-2 
-                        xl:col-start-1 xl:row-start-1 xl:row-end-3 xl:col-end-2 ">
-                    <ul class="flex gap-4 justify-center lg:block xl:flex">
-                        <li><a href="#">Modelos</a></li>
-                        <li><a href="#">Distribuidores</a></li>
-                        <li><a href="#">Conocenos</a></li>
-                        <li><a href="#">Corporativo</a></li>
+            <section class="grid grid-cols-1 grid-rows-2 bg-white md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3">
+                <div class=" md:col-start-1 md:row-start-1 md:row-end-2 md:col-end-2 lg:col-start-1 lg:row-start-1 lg:row-end-3 lg:col-end-2 xl:col-start-1 xl:row-start-1 xl:row-end-3 xl:col-end-2">
+                    <ul class="flex justify-center gap-4 lg:block xl:flex">
+                        <li class="hover:border border-b-black "><a href="#">Modelos</a></li>
+                        <li class="hover:border border-b-black "><a href="#">Distribuidores</a></li>
+                        <li class="hover:border border-b-black "><a href="#">Conocenos</a></li>
+                        <li class="hover:border border-b-black "><a href="#">Corporativo</a></li>
                     </ul>
                 </div>
-                <div class="bg-white text-center
-                        md:col-start-1 md:row-start-2 md:row-end-3 md:col-end-3 
-                        lg:col-start-2 lg:row-start-1 lg:row-end-3 lg:col-end-3 
-                        xl:col-start-2 xl:row-start-1 xl:row-end-3 xl:col-end-3 ">
-                    <label for="">Encuntra tu concesionario mas cercano</label>
-                    <div>
-                        <input type="text" placeholder="Ciudad/Codigo Postal">
+                <div class="text-center bg-white md:col-start-1 md:row-start-2 md:row-end-3 md:col-end-3 lg:col-start-2 lg:row-start-1 lg:row-end-3 lg:col-end-3 xl:col-start-2 xl:row-start-1 xl:row-end-3 xl:col-end-3 ">
+                    <label class="">Encuntra tu concesionario mas cercano</label>
+                    <div class="mt-4">
+                        <input type="text" class="p-2 rounded-md w-[200px] bg-slate-400 placeholder:text-slate-300 focus:outline-none text-white" placeholder="Ciudad/Codigo Postal">
                     </div>
                 </div>
-                <div class="bg-white mb-4
-                        md:col-start-2 md:row-start-1 md:row-end-2 md:col-end-3 
-                        lg:col-start-3 lg:row-start-1 lg:row-end-3 lg:col-end-4 
-                        xl:col-start-3 xl:row-start-1 xl:row-end-3 xl:col-end-4">
-                    <ul class="flex gap-4 justify-center">
-                        <li><i class="fa-brands fa-facebook"></i></li>
-                        <li><i class="fa-brands fa-instagram"></i></li>
-                        <li><i class="fa-brands fa-x-twitter"></i></li>
-                        <li><i class="fa-brands fa-tiktok"></i></li>
-                        <li><i class="fa-brands fa-youtube"></i></li>
+                <div class="mb-4 bg-white md:col-start-2 md:row-start-1 md:row-end-2 md:col-end-3 lg:col-start-3 lg:row-start-1 lg:row-end-3 lg:col-end-4 xl:col-start-3 xl:row-start-1 xl:row-end-3 xl:col-end-4">
+                    <ul class="flex justify-center gap-4">
+                        <li class="duration-100 ease-linear trasition hover:text-lg"><i class="fa-brands fa-facebook"></i></li>
+                        <li class="duration-100 ease-linear trasition hover:text-lg"><i class="fa-brands fa-instagram"></i></li>
+                        <li class="duration-100 ease-linear trasition hover:text-lg"><i class="fa-brands fa-x-twitter"></i></li>
+                        <li class="duration-100 ease-linear trasition hover:text-lg"><i class="fa-brands fa-tiktok"></i></li>
+                        <li class="duration-100 ease-linear trasition hover:text-lg"><i class="fa-brands fa-youtube"></i></li>
                     </ul>
                 </div>
             </section>
             <hr class="text-black">
-            <div class="bg-white mt-4">
-                <ul class="hidden gap-4 justify-end mt-4 lg:flex">
+            <div class="p-2 mt-4 bg-white">
+                <ul class="justify-end hidden gap-4 mt-4 lg:flex">
                     <li><a href="#">Terminos y condiciones</a></li>
                     <li><a href="#">Privacidad</a></li>
                     <li><a href="#">Cookies</a></li>
@@ -216,6 +214,7 @@
     </div>
     <!-- Script JS -->
     <script src="../js/carga.js"></script>
+    <script src="../js/index.js"></script>
 </body>
 
 </html>
